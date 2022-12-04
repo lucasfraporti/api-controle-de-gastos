@@ -266,6 +266,6 @@ App.delete("/delete/:id", (req, res) => {
     });
 });
 
-App.listen(port, () => {
+App.listen(process.env.PORT || port, () => {
     console.log(`Servidor rodando na porta ${port}`);
 });
